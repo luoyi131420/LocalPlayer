@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dip"
+    android:background="@drawable/music_bg"
+	>
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	   	android:layout_marginTop="10dp"
+	   	android:layout_centerHorizontal="true"
+	    android:textSize="10pt"
+	    android:textColor="@color/white" 
+	    android:text="@string/zimu_settings"
+     />
+	<TextView
+		android:id="@+id/color"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="25dp"
+		android:layout_below="@id/title"
+		android:layout_marginTop="8dp"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+		android:text="@string/zimu_color"
+	/>
+	<LinearLayout 
+	    android:id="@+id/zimu_color"	    
+	    android:layout_width="wrap_content"     
+	    android:layout_height="wrap_content"  
+	    android:layout_marginLeft ="40dp"
+	    android:layout_below="@id/color"
+	    android:orientation="horizontal"
+	    >		
+		<CheckBox     
+		    android:id="@+id/yellow"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="20dp"  
+		    android:text="@string/zimu_yellow"
+		    android:textColor="@color/black"   
+		/> 
+		<CheckBox     
+		    android:id="@+id/white"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="65dp"  
+		    android:text="@string/zimu_white"
+		    android:textColor="@color/black"     
+		/> 
+		<CheckBox     
+		    android:id="@+id/blue"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="65dp"  
+		    android:text="@string/zimu_blue"  
+		    android:textColor="@color/black"   
+		/> 
+	</LinearLayout> 
+	<TextView
+		android:id="@+id/size"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="25dp"
+		android:layout_below="@id/zimu_color"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+		android:text="@string/zimu_size"
+	/>
+	<LinearLayout 
+	    android:id="@+id/zimu_size"	    
+	    android:layout_width="wrap_content"     
+	    android:layout_height="wrap_content"  
+	    android:layout_marginLeft ="40dp"
+	    android:layout_below="@id/size"
+	    android:orientation="horizontal"
+	    >		
+		<CheckBox     
+		    android:id="@+id/s"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="20dp"  
+		    android:text="@string/zimu_size_24"    
+		    android:textColor="@color/black"  
+		/> 
+		<CheckBox     
+		    android:id="@+id/m"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="78dp"  
+		    android:text="@string/zimu_size_36"    
+		    android:textColor="@color/black" 
+		/> 
+		<CheckBox     
+		    android:id="@+id/l"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="78dp"  
+		    android:text="@string/zimu_size_48"    
+		    android:textColor="@color/black"  
+		/> 
+	</LinearLayout> 
+	<TextView
+		android:id="@+id/code"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="25dp"
+		android:layout_below="@id/zimu_size"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+		android:text="@string/zimu_code"
+	/>
+	<LinearLayout 
+	    android:id="@+id/zimu_code"	    
+	    android:layout_width="wrap_content"     
+	    android:layout_height="wrap_content"  
+	    android:layout_marginLeft ="40dp"
+	    android:layout_below="@id/code"
+	    android:orientation="horizontal"
+	    >		
+		<CheckBox     
+		    android:id="@+id/gb"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="20dp"  
+		    android:text="@string/GB2312"    
+		    android:textColor="@color/black"  
+		/> 
+		<CheckBox     
+		    android:id="@+id/utf"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="40dp"  
+		    android:text="@string/UTF_8"      
+		    android:textColor="@color/black" 
+		/> 
+		<CheckBox     
+		    android:id="@+id/gbk"     
+		    android:layout_width="wrap_content"     
+		    android:layout_height="wrap_content"  
+		    android:layout_marginLeft ="47dp"  
+		    android:text="@string/GBK"    
+		    android:textColor="@color/black"  
+		/> 
+	</LinearLayout> 	
+    <TextView
+		android:id="@+id/time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="25dp"
+		android:layout_below="@id/zimu_code"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+		android:text="@string/zimu_timeout"
+	/>
+    <SeekBar
+		android:id="@+id/seekbar"
+		android:layout_width="480dip"
+	   	android:layout_height="35dip"
+	   	android:layout_below="@id/time"	   		
+	   	android:layout_centerHorizontal="true"
+	   	android:layout_marginTop ="10dp"
+	   	android:max="80"
+		android:progressDrawable="@drawable/music_progress_seekbar_img" 
+		android:thumb="@drawable/music_progress_thumb"
+		android:paddingLeft="10dip"
+	    android:paddingRight="10dip"     
+	    android:paddingTop="10dip"  
+	    android:paddingBottom="10dip"
+	/>
+     <TextView
+		android:id="@+id/l_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="25dp"
+		android:layout_below="@id/seekbar"
+		android:layout_marginTop ="5dp"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+	/>
+     <TextView
+		android:id="@+id/r_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft ="450dp"
+		android:layout_below="@id/seekbar"
+		android:layout_marginTop ="5dp"
+		android:textSize="10pt"
+		android:textColor="@color/black" 
+	/>
+</RelativeLayout>

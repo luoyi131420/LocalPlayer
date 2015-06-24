@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">本地媒体播放</string>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+    <string name="resume_playing_title">继续播放视频</string>
+    <string name="resume_playing_message">从 %s 开始继续播放?</string>
+    <string name="resume_playing_resume">继续播放</string>
+    <string name="resume_playing_restart">重新开始</string>
+    <plurals name="delete_selection">
+        <item quantity="one">Delete selected item?</item>
+        <item quantity="other">Delete selected items?</item>
+    </plurals>
+    
+    <string name="select_image">Select photo</string>
+    <string name="select_video">Select video</string>
+    <string name="select_item">Select item</string>
+    
+    <string name="video_err">不能播放视频.</string>
+	<string name="time">时间</string>
+    <string name="add_account">Add account</string>
+    <string name="floating">Float</string>
+    <string name="share">Share</string>
+   
+	<string name="close">关闭</string>
+	<color name="transparent_background">#A0101010</color>
+    <string name="setting_subtitle">字幕</string>
+    <string name="setting_track">音轨\u0020\u0020\u0020\u0020</string>
+    <string name="setting_default">默认</string>
+    <string name="setting">设置</string>
+    <string name="scale_screen">Scale Screen</string>
+    <string name="tip_full_screen">满屏</string>
+    <string name="tip_best_fit">最佳比例</string>
+    <string name="tip_actual_size">原始大小</string>
+    <string name="loading_video_text">Buffering...</string>   
+    <!-- mv setttings -->
+	<string name="mv_subtitle_delay_default"><xliff:g id="percent">%1$s</xliff:g>\u0020s</string>    
+    <string name="mv_subtitle_settings">字幕设置</string>
+    <string name="mv_subtitle_switchover">字幕切换</string>
+    <string name="mv_subtitle_font_color">字幕颜色</string>
+    <string name="mv_subtitle_font_charset">字幕编码</string>
+    <string name="mv_subtitle_delay_adjust">字幕延时</string>
+    <string name="mv_subtitle_tips">提示</string>
+    <string name="mv_subtitle_tips_content">可以长按字幕，然后拖动到任意地方，并可以修改字体大小</string>
+     
+    <string name="subtitle_encode_gb18030">简体中文</string>
+    <string name="subtitle_encode_big5">繁体中文</string>
+    <string name="subtitle_encode_iso8859">ASCII编码</string>
+    <string name="subtitle_encode_unicode">统一编码</string>
+    
+    <string name="mv_track_change">切换音轨</string>
+    <string name="mv_track_current">当前音轨\u0020\u0020<xliff:g id="percent">%1$s</xliff:g></string>
+    <string name="mv_track_change_not_allow">当前视频不允许切换音轨</string>
+    <string name="mv_subtitle_current">当前字幕\u0020\u0020<xliff:g id="percent">%1$s</xliff:g></string>
+    <string name="mv_subtitle_change_not_allow">当前视频不允许切换字幕</string>
+    <string name="mv_click_change">Click to Change</string>
+    
+    <string name="mv_change_thumb">Preview</string>
+    <string name="mv_change_thumb_info">Set as Video Preview</string>
+    <string name="mv_change_thumb_info_enable">Enable on Pause</string>
+    <string name="mv_change_thumb_info_enable_toast">Only enable update video preview when video on Pause</string>
+    <string name="mv_screen_shot_error">Create Screen Shot Error.</string>
+    <string name="mv_change_thumb_error">Change VideoPreview error</string>
+    <string name="mv_change_thumb_success">Set video preview successed</string>
+    <string name="mv_change_thumb_failded">Set video preview failed</string>
+    
+    <string name="mv_media_info">媒体信息</string>
+    <string name="mv_media_format">Media format</string>
+    <string name="mv_audio_stream_num">Audio stream count</string>
+    <string name="mv_sub_stream_num">Subtitle stream count</string>
+    <string name="mv_video_stream_num">Video stream count</string>
+    <string name="mv_audio_stream_name">Audio stream name</string>
+    <string name="mv_sub_stream_name">Subtitle stream name</string>
+    <string name="mv_video_stream_name">Video stream name</string>
+    <!-- mv setttings -->
+
+	<string name="sd_removed">SD卡已被移除</string>
+    <string name="usb_removed">USB已被移除</string>
+    <string name="usb2_removed">USB2已被移除</string>
+	<string name="dlna">DLNA</string>
+  
+    <string name="btn_text_1">音乐</string>
+	<string name="btn_text_2">视频</string>
+	<string name="btn_text_3">图片</string>
+	
+	<string name="time_space">图片播放时间间隔(单位秒)</string>
+	<string name="time_miao">秒</string>
+	
+	<string name="shipin_path">视频路径:</string>
+	<string name="yinyue_path">音乐路径:</string>
+	<string name="tupian_path">图片路径:</string>
+	
+	<string name="firstone">第一张</string>
+	<string name="lastone">最后一张</string>	
+	<string name="play_music">播放歌曲：</string>
+	<string name="play_over">播放结束</string>
+	<string name="poster_max">海报最多为十张，不能再添加</string>
+	<string name="poster_added">已经添加过这张海报</string>
+	<string name="poster_ten">已经有十张海报，不能再添加</string>
+	
+	<string name="no_image">外接存储设备没有图片文件</string>
+	<string name="choic_settings">请选择要进行的操作</string>
+	<string name="no_video">没有视频文件</string>
+	<string name="no_music">没有音乐文件</string>
+	<string name="no_pic">"没有图片文件"</string>
+	
+	<string name="no_poster">"请到音乐目录长按确定键添加海报"</string>
+	<string name="no_bg_music">"请到音乐目录长按确定键添加音乐"</string>
+	
+	<string name="no_this_video_tpye">"不支持该视频格式"</string>
+	<string name="no_enough_space">"存储空间不足"</string>
+	<string name="open_invalid">"不能打开非视频文件"</string>
+	
+	<string name="ok_delete">"长按确定键删除"</string>
+	<string name="bg_music_list">"背景音乐列表"</string>
+	<string name="music_poster_list">"音乐海报列表"</string>
+	<string name="action_settings">Settings</string>
+	
+	<string name="zimu_choice">字幕选择</string>
+	<string name="zimu_settings">字幕设置</string>
+	<string name="zimu_color">字幕颜色</string>
+	<string name="zimu_size">字幕大小</string>
+	<string name="zimu_code">字幕编码</string>
+	<string name="zimu_timeout">字幕延时</string>
+	<string name="zimu_yellow">黄色</string>
+	<string name="zimu_white">白色</string>
+	<string name="zimu_blue">蓝色</string>
+	
+	<string name="no_device">没有发现设备，请插入USB或TF卡!</string>
+    <string name="time_00">00:00</string>
+    <string name="zimu_size_24">24</string>
+    <string name="zimu_size_36">36</string>
+    <string name="zimu_size_48">48</string>
+    <string name="GB2312">GB2312</string>
+    <string name="UTF_8">UTF-8</string>
+    <string name="GBK">GBK</string>
+    
+    <string name="danqu">单曲循环</string>
+	<string name="liebiao">列表循环</string>
+	<string name="shunxu">顺序播放</string>
+	<string name="suiji">随机播放</string>
+	
+	<string name="left_channel">左声道</string>
+	<string name="right_channel">右声道</string>
+	<string name="stero_channel">立体声</string>
+	
+	<string name="please_input_newfilename">请输入要新建的文件夹名称</string>
+	<string name="please_input_filename">请输入新文件名</string>
+	<string name="newfile">新建文件夹</string>
+	
+	<string name="add_success">添加成功</string>
+	<string name="add_failed">添加失败</string>
+	<string name="copy_over">复制完成</string>
+	<string name="loading">加载中......</string>
+	<string name="removing">删除中......</string>
+	<string name="copying">正在复制......</string>	
+	<string name="playing">正在播放：</string>
+	<string name="usb">U盘</string>
+	<string name="usb2">U盘2</string>
+	<string name="tf">TF卡</string>	
+	
+	<string name="display_horizontally">横向显示</string>
+	<string name="list_show">列表显示</string>
+	<string name="create_directory">创建目录</string>
+	<string name="delete_directory">删除目录</string>
+	<string name="paste">粘贴</string>
+	<string name="root_directory">根目录</string>
+	<string name="background_music">背景音乐</string>
+	
+	<string name="copied_paste_operations">已复制，请到目标文件夹进行粘贴操作</string>
+	<string name="cut_paste_operations">已剪切，请到目标文件夹进行粘贴操作</string>
+	
+	<string name="open">打开</string>
+	<string name="rename">重命名</string>
+	<string name="delete">删除</string>
+	<string name="copy">复制</string>
+	<string name="cut">剪切</string>
+	<string name="add_bg_music">添加背景音乐</string>
+	<string name="add_bg_poster">添加背景海报</string>
+	<string name="What_do_you_want_to_do">请选择要进行的操作</string>
+	
+	<string name="paste_file">粘贴文件</string>
+	<string name="please_copy_or_cut_operations">请先进行复制或剪切操作</string>
+	<string name="the_same_name_exists_overwrite">存在同名文件，是否覆盖？</string>
+	<string name="sure_to_delete">确定删除</string>
+	<string name="ma">吗？</string>
+	
+	<string name="delete_folder">删除文件夹</string>
+	<string name="this_operation_will_delete">此项操作会删除［</string>
+	<string name="all_files_in_the_folder_and_the_determination_delete_this_folder">］文件夹和其中的所有文件，确定删除该文件夹吗？</string>
+	<string name="has_been_deleted">已被删除</string>
+	
+	<string name="operation">操作</string>
+	<string name="have_to_add_delete">已添加，是否删除？</string>
+	<string name="cancel">取消</string>
+	<string name="ensure">确定</string>
+	<string name="hint">提示</string>
+	<string name="quit">退出</string>
+	<string name="successfully_deleted">删除成功</string>
+	<string name="failed_to_delete">删除失败</string>
+	
+	<string name="abnormal_operation_please_re_select">操作异常，请重新选择</string>
+	<string name="empty_the_bgmusic_list">是否清空背景音乐列表？</string>
+	<string name="remove_the_selected">是否移除选中的</string>
+	<string name="music">首音乐？</string>
+	<string name="please_tick_to_remove_music">请勾选要移除的音乐</string>
+	<string name="Long_press_the_OK_button_to_remove_the_selected_music">长按确定键选择要移除的音乐</string>
+	<string name="not_to_remove_the_music">没有要移除的音乐</string>
+	<string name="not_to_clear_the_music">没有要清除的音乐</string>
+	<string name="exit_bg_music">您是否确定退出背景音乐播放？</string>
+	
+	<string name="no_previous_mv">已经没有上一部影片了</string>
+	<string name="no_next_mv">已经没有下一部影片了</string>
+	<string name="exit_music_play">您是否确定退出音乐播放？</string>
+	<string name="error_stop_play">播放错误，停止播放</string>
+	<string name="file_not_exist_stop_play">文件不存在，停止播放</string>
+	<string name="file_not_exist_not_play">，此路径文件不存在，无法播放</string>
+	<string name="switch_other_mode">请先切换到其他模式</string>
+	<string name="no_previous_ms">已经没有上一首歌曲了</string>
+	<string name="no_next_ms">已经没有下一首歌曲了</string>
+	
+	<string name="settings">视频设置</string>
+	<string name="screen_setting">屏幕宽高比</string>
+	<string name="size_original">原始大小</string>
+	<string name="size_16_9">16:9</string>
+	<string name="size_4_3">4:3</string>
+	<string name="size_full">全屏</string>
+	
+	<string name="sound_setting">声道设置</string>
+	<string name="sound_left">左声道</string>
+	<string name="sound_right">右声道</string>
+	<string name="stereo">立体声</string>
+	
+    <string name="menu_item_title1">播放模式</string>
+    <string name="menu_item_title2">2D-3D切换</string>
+    <string name="menu_item_title3">屏幕宽高比</string>
+    <string name="menu_item_title4">声道设置</string>
+    <string name="menu_item_title5">音轨设置</string>
+    <string name="menu_item_title6">主字幕选择</string>
+    <string name="menu_item_title7">次字幕选择</string>
+    <string name="menu_item_title8">音量调节</string>
+
+    <string-array name="menu_play_mode">
+		<item>单曲循环</item>
+		<item>列表循环</item>
+		<item>顺序播放</item>
+		<item>随机播放</item>
+	</string-array>
+    <string-array name="menu_screen_scale"> 
+    	<item>原始大小</item>
+	    <item>16:9</item>    	
+	    <item>4:3</item>
+	    <item>全屏</item>
+    </string-array>
+</resources>

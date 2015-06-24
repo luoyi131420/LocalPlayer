@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/movie_background_bottom"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/movie_seek_time"
+        android:layout_width="200dip"
+        android:layout_height="48dip" >
+
+        <com.wmt.frameworkbridge.video.VideoSeekTimeBar
+            android:id="@+id/movie_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:minHeight="48dip"
+            android:maxHeight="48dip"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/movie_time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="14dip"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/movie_time_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="14dip"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/movie_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/movie_play" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wmt.util.HolographicImageView
+            android:id="@+id/movie_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/movie_previous" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wmt.frameworkbridge.video.MovieRewFrameButton
+            android:id="@+id/movie_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/movie_rew" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wmt.frameworkbridge.video.MovieRewFrameButton
+            android:id="@+id/movie_ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/movie_ff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.wmt.util.HolographicImageView
+            android:id="@+id/movie_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_marginRight="10dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/movie_next" />
+    </LinearLayout>
+
+</LinearLayout>

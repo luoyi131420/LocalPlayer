@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+	 >
+	
+    <com.kt.localmedia.video.MyVideoPlayer
+		android:id="@+id/m_surface_view" android:layout_gravity="center"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_centerInParent="true" />
+    
+    <!-- <SurfaceView
+   		android:id="@+id/surface_view"
+   		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_gravity="center"
+    	android:layout_centerInParent="true"
+    />-->
+    
+    <TextView
+	    android:id="@+id/current_title"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_marginTop="0dp"
+	   	android:layout_marginLeft="0dp"
+	    android:textSize="12pt"
+	    android:textColor="@color/white" 
+	    android:visibility="gone"
+     />
+
+    <TextView 
+        android:id="@+id/zimu_tv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="24sp"
+	    android:textColor="#ffffff"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="100dip"
+	    android:gravity="center"
+        android:layout_gravity="center_horizontal"
+     /> 
+	<RelativeLayout
+        android:layout_width="838dip"
+        android:layout_height="111dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:background="@drawable/mediaseebar_bg"
+        android:visibility="gone"
+        android:id="@+id/bofang_tiao"
+         >
+         
+	     <TextView
+		    android:id="@+id/current_time"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="12dip"
+		   	android:layout_marginTop="19dip"
+		    android:textSize="10pt"
+		    android:textColor="@color/white" 
+	    /> 
+		<SeekBar
+			android:id="@+id/video_seekbar"
+			android:layout_width="620dip"
+		   	android:layout_height="35dip"
+		   	android:layout_centerHorizontal="true"
+		   	android:max="100"   		
+	   	 	android:layout_marginTop="14dip" 
+			android:progressDrawable="@drawable/music_progress_seekbar_img" 
+			android:thumb="@drawable/music_progress_thumb"
+			android:paddingLeft="10dip"
+	        android:paddingRight="10dip"     
+	        android:paddingTop="10dip"  
+	        android:paddingBottom="10dip"
+			android:focusable="true"
+		/> 
+	   	
+		<TextView
+		    android:id="@+id/totle_time"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="19dip"
+	        android:layout_marginRight="20dip"
+	        android:layout_alignParentRight="true"
+		    android:textSize="10pt"
+		    android:textColor="@color/white" 
+	    />	
+	    <LinearLayout
+	        android:id="@+id/btn_id"
+	        android:layout_width="830dip"
+	        android:layout_height="60dip"
+	        android:orientation="horizontal"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="45dip" 
+	         >
+		    <Button android:id="@+id/video_play" 
+				android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="130dp"
+				android:focusable="true">
+			</Button>
+			<Button android:id="@+id/video_previous" 
+				android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="30dp"
+				android:background="@drawable/previous_btn_selector"
+				android:focusable="true">
+			</Button>	
+			<Button android:id="@+id/video_next" 
+				android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="30dp"
+				android:background="@drawable/next_btn_selector"
+				android:focusable="true">			
+			</Button>				
+			<Button android:id="@+id/play_mode" 
+		    	android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="30dp"
+				android:focusable="true">	 
+			</Button>
+			<Button android:id="@+id/setting_btn" 
+				android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="30dp"
+				android:background="@drawable/setting_selector">	 
+			</Button>
+			<Button android:id="@+id/zimu_btn" 
+				android:layout_width="60dip"
+				android:layout_height="60dip" 
+				android:layout_marginLeft="30dp"
+				android:background="@drawable/zimu_selector"
+				android:focusable="true">		 
+			</Button>
+		</LinearLayout>
+	</RelativeLayout> 
+	<LinearLayout 
+	    android:id="@+id/layout_subtitle"
+		android:orientation="vertical" 
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="30dip"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+
+		<TextView 
+		    android:id="@+id/txtsubtitle" 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textSize="@dimen/default_text_size_huge"
+			android:gravity="center" 
+			android:shadowColor="#ff0000ee"
+			android:shadowRadius="1.0" />
+		<ImageView 
+		    android:id="@+id/imgsubtitle"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/layout_setting"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:visibility="gone" android:layout_centerInParent="true">
+		<include layout="@layout/popup_menu" />
+	</LinearLayout>
+</RelativeLayout>

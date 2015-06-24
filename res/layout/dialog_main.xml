@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/dialog2"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="600dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/play_pause_button"
+            android:layout_width="40dip"
+            android:layout_height="45dip" />
+
+        <Spinner
+            android:id="@+id/time_spinner"
+            android:layout_width="40dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/time_jiange_selector" 
+            android:prompt="@string/time_space" 
+            android:paddingRight="15dip"
+            />
+
+        <Button
+            android:id="@+id/bg_music_button"
+            android:layout_width="40dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/music_bg_selector" />
+
+        <Button
+            android:id="@+id/play_mode"
+            android:layout_width="40dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip" />
+    </LinearLayout>
+
+</RelativeLayout>

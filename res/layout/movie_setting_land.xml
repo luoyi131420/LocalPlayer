@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/mv_settings_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_background"
+        android:orientation="horizontal" >
+	
+    <include layout="@layout/movie_settings_main_menu"
+        android:layout_width="@dimen/mv_settings_main_menu_width"
+        android:layout_height="wrap_content"/>
+    
+    <FrameLayout android:layout_width="@dimen/mv_settings_second_menu_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/mv_settings_second_container"
+        android:visibility="gone" />
+    
+    <FrameLayout android:layout_width="@dimen/mv_settings_third_menu_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/mv_settings_third_container"
+        android:visibility="gone" />
+     
+</LinearLayout>

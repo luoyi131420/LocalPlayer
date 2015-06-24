@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <TextView android:id="@+id/mv_subtitle_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="@string/mv_subtitle_settings"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+   
+   	<RelativeLayout android:id="@+id/mv_subtitle_switchover_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/setting_pressed"
+	    android:clickable="true"
+	    android:focusable="true">
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentLeft="true"	        
+	        android:padding="10dip"
+	        android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+	        android:text="@string/mv_subtitle_switchover"/>
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:paddingRight="10dip"
+            android:src="@drawable/setting_next" 
+            android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+   	   
+	<RelativeLayout android:id="@+id/mv_subtitle_color_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/setting_pressed"
+	    android:clickable="true"
+	    android:focusable="true">
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentLeft="true"	        
+	        android:padding="10dip"
+	        android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+	        android:text="@string/mv_subtitle_font_color"/>
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:paddingRight="10dip"
+            android:src="@drawable/setting_next" 
+            android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+    
+	<RelativeLayout android:id="@+id/mv_subtitle_charset_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/setting_pressed"
+	    android:clickable="true"
+	    android:focusable="true">
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+			android:layout_alignParentLeft="true"
+	        android:padding="10dip"
+   	        android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+	        android:text="@string/mv_subtitle_font_charset"/>
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:paddingRight="10dip"
+            android:src="@drawable/setting_next" 
+            android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+    
+	<RelativeLayout android:id="@+id/mv_subtitle_delay_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/setting_pressed"
+	    android:clickable="true"
+	    android:focusable="true">
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentLeft="true"
+	        android:padding="10dip"
+   	        android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+	        android:text="@string/mv_subtitle_delay_adjust"/>
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:paddingRight="10dip"
+            android:src="@drawable/setting_next" 
+            android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+	
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+    
+	<RelativeLayout android:id="@+id/mv_subtitle_tip_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/setting_pressed"
+	    android:clickable="true"
+	    android:focusable="true">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentLeft="true"
+	        android:padding="10dip"
+	       	android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+	        android:text="@string/mv_subtitle_tips"/>
+	    
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:paddingRight="10dip"
+            android:src="@drawable/setting_next" 
+            android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+
+</LinearLayout>

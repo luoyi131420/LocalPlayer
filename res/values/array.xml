@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnername">
+        <item>3</item>
+        <item>6 </item>
+        <item>9</item>
+        <item>18</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="RepeatMode">
+        <item >Single</item>
+        <item >Repeat one</item>
+        <item >Repeat all</item>
+    </string-array>
+    
+	<string-array name="AudioChannel">
+		<item >左声道</item>
+		<item >右声道</item>
+		<item >立体声</item>
+		<item >环绕声</item>
+	</string-array>
+</resources>

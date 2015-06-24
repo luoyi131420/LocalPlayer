@@ -1,0 +1,33 @@
+<com.wmt.frameworkbridge.video.MovieDragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+    <com.wmt.frameworkbridge.video.MovieVideoView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:clickable="false"/>
+     <com.wmt.frameworkbridge.video.MovieDropContainer 
+        android:id="@+id/movie_drop_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    	<include layout="@layout/movie_subtitle"
+    	    android:id="@+id/movie_subtitle" 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="bottom"
+    	    android:layout_marginBottom="15dip"/>
+    </com.wmt.frameworkbridge.video.MovieDropContainer>
+ <ImageView 
+        android:id="@+id/sub_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="35dip"
+        />
+</com.wmt.frameworkbridge.video.MovieDragLayer>

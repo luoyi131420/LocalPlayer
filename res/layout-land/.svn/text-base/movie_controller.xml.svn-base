@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/movie_background_bottom" >
+
+    <ImageView
+        android:id="@+id/movie_play"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="15dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/movie_play" />
+
+    <com.wmt.util.HolographicImageView
+        android:id="@+id/movie_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/movie_play"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/movie_previous" />
+
+    <com.wmt.frameworkbridge.video.MovieRewFrameButton
+        android:id="@+id/movie_rew"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/movie_previous"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="0dip"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/movie_rew" />
+
+    <FrameLayout
+        android:id="@+id/movie_seek_time"
+        android:layout_width="@dimen/movie_controller_seekbar_width"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/movie_rew" >
+
+        <com.wmt.frameworkbridge.video.VideoSeekTimeBar
+            android:id="@+id/movie_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"            
+            style="@style/MovieSeekbar"
+            android:focusable="false"
+            android:minHeight="@dimen/mv_controller_height"
+            android:maxHeight="@dimen/mv_controller_height"
+            />
+
+        <TextView
+            android:id="@+id/movie_time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="14dip"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/movie_time_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="14dip"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <com.wmt.frameworkbridge.video.MovieRewFrameButton
+        android:id="@+id/movie_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/movie_seek_time"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="0dip"
+        android:paddingRight="5dip"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/movie_ff" />
+
+    <com.wmt.util.HolographicImageView
+        android:id="@+id/movie_next"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/movie_ff"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="5dip"
+        android:layout_marginRight="15dip"
+        android:paddingRight="5dip"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/movie_next" />
+
+</RelativeLayout>

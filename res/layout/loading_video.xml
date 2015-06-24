@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/progress_indicator"
+     android:orientation="vertical"
+	 android:layout_gravity="center_horizontal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+   <FrameLayout android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+	   <TextView android:id="@+id/loading_video_percent"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center"
+	       android:gravity="center"
+	       android:textColor="?android:attr/textColorPrimary"
+		   android:shadowColor="@android:color/black"
+	       android:shadowDx="0"
+	       android:shadowDy="0"
+	       android:shadowRadius="2"/>
+      <ProgressBar android:id="@android:id/progress"
+          style="@android:style/Widget.Holo.ProgressBar.Large"
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+           />
+  
+   </FrameLayout>
+
+   <TextView
+       android:paddingTop="5dip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textSize="14sp"
+       android:textColor="?android:attr/textColorPrimary" 
+	   android:text="@string/loading_video_text"/>
+   
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="20dip"
+    android:background="@drawable/index_bg"
+    >
+    dvList.get(position)dvList.get(position)dvList.get(position)
+    <GridView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/device_list_gridview"
+        android:columnWidth="100dip"
+        android:numColumns="5"
+        />
+	<TextView
+        android:id="@+id/no_device_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp" 
+        android:text="@string/no_device"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="@string/mv_subtitle_font_color"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+	
+	<com.wmt.frameworkbridge.video.MovieColorPickerView
+		android:id="@+id/mv_subtitle_settings_color" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip">
+	</com.wmt.frameworkbridge.video.MovieColorPickerView>
+   
+</LinearLayout>

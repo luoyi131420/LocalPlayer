@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/media_bg"> 
+    <ImageView
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="@drawable/tupian_icon" 
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="10dip"
+        />
+    <TextView
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	   	android:layout_centerHorizontal="true"
+	    android:textSize="10pt"
+	    android:textColor="@color/white" 
+     />
+    <GridView
+        android:id="@+id/file_list_view"
+        android:layout_width="1200dip"
+        android:layout_height="500dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dip"
+        android:columnWidth="152dip"
+        android:numColumns="8"
+        android:verticalSpacing="35dip" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <TextView android:id="@+id/mv_subtitle_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="@string/setting_track"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+   
+   <TextView android:id="@+id/mv_settings_current_track"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"        
+       android:padding="10dip"
+       android:textColor="@android:color/background_light"
+       android:textSize="22sp"
+       android:text="@string/mv_track_current"/>
+         
+   
+     <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+     
+       <LinearLayout android:id="@+id/mv_setttings_track_switch"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:focusable="true"
+          android:clickable="true"
+          android:background="@drawable/setting_pressed">
+
+      	 <TextView android:id="@+id/mv_setttings_track_switch_textview"
+	           android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:gravity="center_vertical"       
+		       android:textColor="@android:color/background_light"
+		       android:textSize="22sp"
+		       android:paddingLeft="10dip"
+		       android:text="@string/mv_track_change"/>
+
+          <TextView
+              android:id="@+id/mv_setttings_track_switch_default"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical" 
+              android:paddingLeft="10dip"
+              android:text="@string/mv_track_change_not_allow"
+              android:textSize="15sp"/>
+        
+      </LinearLayout>
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+</LinearLayout>

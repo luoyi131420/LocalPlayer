@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="@string/mv_subtitle_font_charset"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@drawable/setting_divider" />
+    
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:id="@+id/layout_encode" 
+		android:layout_gravity="center"
+		android:orientation="vertical" 
+		android:layout_height="wrap_content">
+		<RadioGroup 
+			android:id="@+id/mv_subtitle_charset_encode"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="2dip">
+				<RadioButton 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/subtitle_encode_gb18030" 
+					android:id="@+id/mv_subtitle_charset_radio0"
+					android:checked="true">
+				</RadioButton>
+				<RadioButton 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/subtitle_encode_big5" 
+					android:id="@+id/mv_subtitle_charset_radio1">
+				</RadioButton>
+				<RadioButton 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/subtitle_encode_iso8859" 
+					android:id="@+id/mv_subtitle_charset_radio2">
+				</RadioButton>
+				<RadioButton 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/subtitle_encode_unicode" 
+					android:id="@+id/mv_subtitle_charset_radio3">
+				</RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+   
+</LinearLayout>

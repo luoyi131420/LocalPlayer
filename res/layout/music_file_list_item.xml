@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file_list_item"
+ 	android:layout_width="1212dip" 
+	android:layout_height="60dip"
+	>
+ 	<ImageView android:id="@+id/file_list_item_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:paddingLeft="10dp"
+    />
+  	<TextView android:id="@+id/file_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="70dip" 
+        android:layout_marginTop="13dip" 
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+</RelativeLayout>

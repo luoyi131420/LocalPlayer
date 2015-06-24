@@ -1,0 +1,124 @@
+<resources>
+   <style name="dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+	</style>
+	
+	<style name="CustomProgressDialog" parent="@style/CustomDialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+   
+	<style name="text_title">
+	    <item name="android:textSize">28sp</item>
+	</style>
+	<style name="text_normal">
+	     <item name="android:textSize">20sp</item>
+	</style>
+	<style name="text_big">
+	     <item name="android:textSize">24sp</item>
+	</style>
+	<style name="text_smarl">
+	     <item name="android:textSize">16sp</item>
+	</style>
+	
+    <style name="KTMusicListDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    <style name="ZimuSettingActivity" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    <style name="SettingActivity" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    <style name="ZimuRadioGroupDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+    <style name="popwin_anim_style">
+     	<item name="android:windowEnterAnimation">@anim/menushow</item>
+     	<item name="android:windowExitAnimation">@anim/menuhide</item>
+	</style>
+	<style name="wmtRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/wmt_ratingbar</item>
+		<item name="android:minHeight">30dip</item>
+		<item name="android:maxHeight">30dip</item>
+	</style>
+	
+	<style name="popup_menu_LinearLayout">
+		<item name="android:layout_gravity">center_vertical|center_horizontal</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:focusable">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:padding">5dip</item>
+		<item name="android:background">@drawable/editor_btn</item>
+		<item name="android:orientation">horizontal</item>	
+	</style>
+
+	<style name="popup_text_LinearLayout">
+		<item name="android:layout_gravity">center_vertical|center_horizontal</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	
+	<style name="popup_menu_ImageView">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<style name="popup_menu_TextView">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:textSize">@dimen/default_text_size_middle</item>
+		<item name="android:textColor">#FFF</item>
+		<item name="android:layout_marginLeft">5dip</item>
+		<item name="android:layout_marginRight">5dip</item>
+	</style>	
+	
+	<style name="popup_menu_Line">
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingLeft">50dip</item>
+		<item name="android:paddingRight">50dip</item>
+		<item name="android:scaleType">fitXY</item>
+		<item name="android:background">@drawable/panel_separator</item>
+	</style>
+</resources>

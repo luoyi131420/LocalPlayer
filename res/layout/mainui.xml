@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/index_bg" >
+
+    <FrameLayout
+        android:id="@+id/main_framlayout"
+        android:layout_width="700dip"
+        android:layout_height="250dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+
+        >
+
+        <Button
+            android:id="@+id/shipin_btn"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:background="@drawable/shipin_icon_n" 
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="70dip"
+            />
+
+        <Button
+            android:id="@+id/yinyue_btn"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:background="@drawable/yinyue_icon_n" 
+            android:layout_marginLeft="300dip"
+             android:layout_marginTop="70dip"
+            />
+
+        <Button
+            android:id="@+id/tupian_btn"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:background="@drawable/tupian_icon_n" 
+            android:layout_marginLeft="550dip"
+             android:layout_marginTop="70dip"
+            />
+        
+        <TextView 
+            android:text="@string/btn_text_2"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+             android:layout_marginLeft="50dip"
+             android:gravity="center"
+         
+            />
+        <TextView 
+            android:text="@string/btn_text_1"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+             android:gravity="center"
+             android:layout_marginLeft="300dip"
+            
+            />
+        <TextView 
+            android:text="@string/btn_text_3"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="32sp"
+             android:layout_marginLeft="550dip"
+             android:gravity="center"
+             
+            />
+    </FrameLayout>
+
+</RelativeLayout>

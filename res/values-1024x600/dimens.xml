@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_text_size_middle">30px</dimen>
+    <dimen name="default_text_size_huge">45px</dimen>
+    <dimen name="default_win_error_height">300px</dimen>
+</resources>
